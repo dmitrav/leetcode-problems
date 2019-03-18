@@ -1,20 +1,26 @@
 public class JewelsAndStones {
-    public static void main(String[] args) {
 
-        byte count = 0;
+    public static void main(String[] args) {
 
         String jewels = "aA";
         String stones = "aAAbbbb";
 
-        for (byte i = 0; i < jewels.length(); i++){
-            for (byte j = 0; j < stones.length(); j++){
-                if (jewels.charAt(i) == stones.charAt(j)){
+        System.out.println(getNumOfJewels(jewels, stones));
+
+    }
+
+    private static int getNumOfJewels(String J, String S){
+
+        byte count = 0;
+
+        for (byte i = 0; i < J.length(); i++){
+            for (byte j = 0; j < S.length(); j++){
+                if (J.charAt(i) == S.charAt(j)){
                     count++;
                 }
             }
         }
-
-        System.out.println(count);
-
+        return count;
     }
+
 }
