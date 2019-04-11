@@ -30,8 +30,6 @@ public class ToLowerCase {
         return lowerCaseString.toString();
     }
 
-
-
     private static String monstrousToLowerCase(String s){
 
         StringBuilder lowerCaseString = new StringBuilder("");
