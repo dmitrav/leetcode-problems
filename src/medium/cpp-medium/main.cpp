@@ -1,20 +1,18 @@
 #include <iostream>
-#include "problem1769.h"
+#include "p1689.h"
 
 using namespace std;
 
 int main()
 {
-    string s = "001011";
+//    string s = "82734";
+    string s = "27346209830709182346";
+//    string s = "32";
 
-//    int* res = getMinNumberOfOperations(s);
-//    std::vector<int> res = getVectorOfMinNumberOfOperations(s);
-    std::vector<int> res = getVectorOfMinNumberOfOperations_2(s);
+    int res = getMinPartitions(s);
 
-    for (int i=0; i < s.size(); i++){
-        cout << res[i] << " ";
-    }
-    cout << endl;
+    cout << res << endl;
+
 
     return 0;
 }

@@ -1,9 +1,9 @@
 
-#include "problem1769.h"
+#include "p1769.h"
 #include <string>
 #include <vector>
 
-// Minimum Number of Operations to Move All Balls to Each Box
+// leetcode 1769: Minimum Number of Operations to Move All Balls to Each Box
 int* getMinNumberOfOperations(std::string input){
 
     int* res = new int[input.size()];
