@@ -41,7 +41,6 @@ void inOrder(TreeNode* root)
         cout << root->val <<" ";
         inOrder(root->right);
     }
-    cout << endl;
 }
 
 

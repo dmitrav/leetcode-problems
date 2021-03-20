@@ -16,9 +16,10 @@ int main()
 
     TreeNode* root = insertLevelOrder(input, root, 0, n);
 
-//    inOrder(root);
+    inOrder(root);
+    cout << endl;
 
-    cout << deepestLeavesSum(root) << endl;
+    cout << "sum=" << deepestLeavesSum(root) << endl;
 
 
     return 0;
